@@ -1,0 +1,31 @@
+
+.list{
+	list-style:none; 
+}
+
+body{
+  background-image: url("http://parasolmedia.pl/wp-content/uploads/2014/11/CobaltCanvas-LightBlue-1920x1080.jpg");
+
+font-family: arial;
+font-size: 20px;   
+}
+
+h1{
+	 text-align: center;
+}
+
+#p_uno {
+	border: solid black; 
+}	
+
+#p_dos {
+	border: solid black; 
+}	
+#p_tres {
+	border: solid black; 
+}	
+
+p:hover{
+color: white;	
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+<script type>
+		
+		/*descripción: función de retorna la suma de dos numeros.
+		resultado: devuelve la suma de los numeros pasados como parametro.
+		*/
+
+
+
+
+
+	/*Funcion sumar*/
+		function sumar(x,y) {
+		var s = x + y;
+		return s;
+	}
+
+
+
+	/*Funcion multiplicar y sumar*/
+		function multiplicar(x,y,b) {
+		var a =(x*y)+b;
+		return a;
+	}
+
+</script>
+
+</head>
+<body>
+
+<p>Click al bot&oacute;n.</p>
+<button onclick="myFunction()">Trata</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var person = prompt("Introduzca nombre: ", "John");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hola " + person + "! C&oacute;mo est&aacute;s?";
+    }
+}
+</script>
+
+
+
+<p>Click al bot&oacute;n para multiplicar.</p>
+<button onclick="alert (multiplicar (4,9,5))">multiplicar</button>
+
+
+<p>Click al bot&oacute;n para sumar .</p>
+<button onclick="alert (sumar (4,9))">sumar</button>
+
+
+
+<p>Click al bot&oacute;n para multiplicar.</p>
+<button onclick="alert (multiplicar (4,9,5))">multiplicar</button>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app="myApp">
+<div>
+
+<legend>Ejercicio 1</legend>
+<script src= "angular.min.js"></script>
+<p>Nombre: <input type=text ng-model=Nombre></p>
+<p>Apellido: <input type=text ng-model=Apellido></p>
+<p>Hola {{ Nombre + " " + Apellido }}</p>
+
+
+
+
+<br>
+<legend>Ejercicio 2</legend>
+<br>
+<script src=angular.min.js></script>
+operando1: <input type=number ng-model=operando1>
+<br>
+<br>
+operando2: <input type=number ng-model=operando2>
+<button ng-click="multiplicacion=operando1*operando2">*</button>
+<button ng-click="suma=operando1+operando2">+</button>
+<p>Resultado multiplicacion: {{ multiplicacion }}</p>
+<p>Resultado suma: {{ suma }}</p>
+<script>
+}
+</script>
+
+
+<legend>Ejercicio 3</legend>
+<script src=angular.min.js></script>
+</head>
+<body>
+
+	<div ng-app="myApp">
+		 <input type="text" ng-model="text" placeholder="Enter you input here...">
+       <p>Input value: {{ text }}</p>
+       <p ng-style="text==(text | reverse) ? {color:'blue'} : {color:'red'}">Filtered Value: {{ text | reverse }}</p>
+        </div>
+	<script>
+		var myApp = angular.module("myApp",[]);
+		myApp.filter("reverse", function() {
+			return function(input) {
+				return input.split("").reverse().join("");
+			};
+		});
+	</script>
+
+
+
+
+</div>
+</body>
+</html>
+
+
